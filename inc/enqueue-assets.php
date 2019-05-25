@@ -1,4 +1,5 @@
 <?php 
+
   function agency_scripts() {
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap/css/bootstrap.min.css' );
     wp_enqueue_style( 'fa', get_template_directory_uri() . '/vendor/fontawesome-free/css/all.min.css' );
