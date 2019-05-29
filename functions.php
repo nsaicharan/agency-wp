@@ -1,6 +1,7 @@
 <?php
 
   require 'inc/enqueue-assets.php';
+  require 'inc/customizer.php';
 
   /**
    * Navigation Menu

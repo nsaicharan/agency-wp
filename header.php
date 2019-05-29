@@ -35,12 +35,12 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead">
+  <header class="masthead" style="background-image: url('<?= get_theme_mod( 'hero-bg' ) ?>')">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div class="intro-lead-in"><?= get_theme_mod( 'hero-text-1', 'Welcome To Our Studio!' ); ?></div>
+        <div class="intro-heading text-uppercase"><?= get_theme_mod( 'hero-text-2', "It's Nice To Meet You" ); ?></div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services"><?= get_theme_mod( 'hero-btn-text', 'Tell Me More' ); ?></a>
       </div>
     </div>
   </header>
