@@ -28,10 +28,7 @@ const banner = ['/*!\n',
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
-    server: {
-      baseDir: "./"
-    },
-    port: 3000
+    proxy: "http://agency.test" // URL of the site on local server
   });
   done();
 }
@@ -117,7 +114,7 @@ function js() {
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
   gulp.watch("./js/**/*", js);
-  gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch("./**/*.php", browserSyncReload);
 }
 
 // Define complex tasks
