@@ -96,3 +96,17 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+// Push down fixed-top elements (nav menu) when WP admin bar is active
+.admin-bar .fixed-top {
+  top: 32px;
+
+  @media (max-width: 782px) {
+    top: 46px;
+  }
+  
+  @media (max-width: 600px) {
+    position: sticky;
+    top: 0;
+  }
+}

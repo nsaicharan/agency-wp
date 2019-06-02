@@ -108,6 +108,24 @@ img::-moz-selection {
   background: transparent;
 }
 
+.admin-bar .fixed-top {
+  top: 32px;
+}
+
+@media (max-width: 782px) {
+  .admin-bar .fixed-top {
+    top: 46px;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-bar .fixed-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
 #mainNav {
   background-color: #212529;
 }
